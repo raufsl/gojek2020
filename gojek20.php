@@ -3,9 +3,9 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","                    KUATMLARAT \n");
+echo color("red","                KUATMLARAT \n");
 echo color("white","                  KADALs MbeliNK   \n");
-echo color("white","                    ObahSambat         \n");
+echo color("white","                    Gofood 20k 10k         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
