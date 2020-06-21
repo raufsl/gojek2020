@@ -1,11 +1,11 @@
-﻿<?php
+<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","                KUATMLARAT \n");
-echo color("white","                  KADALs MbeliNK   \n");
-echo color("white","                    Gofood 20k 10k         \n");
+echo color("red","             SCRIPT GRATIS TIDAK DI JUAL \n");
+echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("white","                    BEGAL - RECEH         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -31,7 +31,7 @@ echo color("white","                  Format Kode 62*** \n");
         else{
             $hp = '1'.substr(trim($nohp),0,13);
         }
-    }
+            }
         $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
@@ -69,7 +69,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo color("white",".");
         sleep(35);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GFBARUSBY"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","Message: ".$message);
@@ -83,7 +83,7 @@ echo color("white","                  Format Kode 62*** \n");
         echo color("white",".");
         sleep(3);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0906"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GFBARUSBY"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
         echo "\n".color("white"," REFRESH..");
@@ -93,7 +93,7 @@ echo color("white","                  Format Kode 62*** \n");
         sleep(3);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GFBARUSBY"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("white"," Message: ".$messageboba09);
         sleep(1);
@@ -198,4 +198,4 @@ echo color("white","                  Format Kode 62*** \n");
          }
 //  }
 
-// echo change()."\n";
+
