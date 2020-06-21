@@ -4,8 +4,8 @@ include "function.php";
 ulang:
 // function change(){
 echo color("red","             KUATMLARAT \n");
-echo color("blue","           Time  : ".KADALs MBELINK."   \n");
-echo color("red","                    ObahSambat         \n");
+echo color("blue","           ".KADALS MBELINK."   \n");
+echo color("red","                  ObahSambat         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
